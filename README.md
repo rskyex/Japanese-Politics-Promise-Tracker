@@ -22,12 +22,14 @@ This project demonstrates how a structured, evidence-based transparency tool can
 
 | Layer             | Technology                         |
 |-------------------|------------------------------------|
-| Framework         | Next.js 14 (App Router)            |
-| Language          | TypeScript                         |
-| Styling           | Tailwind CSS                       |
-| Charts            | Recharts                           |
-| Data storage      | Local JSON/TypeScript (demo)       |
-| Deployment target | Static export (Vercel / Netlify)   |
+| Framework         | Next.js 14.2 (App Router)          |
+| Language          | TypeScript 5                       |
+| Styling           | Tailwind CSS 3                      |
+| Charts            | Recharts 2                         |
+| Icons             | lucide-react                       |
+| Class utilities   | clsx                               |
+| Data storage      | Local TypeScript modules (demo)    |
+| Deployment target | Vercel / Netlify (Next.js)         |
 
 ---
 
@@ -98,6 +100,30 @@ npm run dev
 npm run build
 npm run start
 ```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+---
+
+## Demo data scale
+
+The bundled demo dataset in `/data` currently contains:
+
+| Dataset      | Records | File                  |
+|--------------|---------|-----------------------|
+| Politicians  | 10      | `data/politicians.ts` |
+| Promises     | 23      | `data/promises.ts`    |
+| Diet actions | 28      | `data/actions.ts`     |
+| Matches      | 27      | `data/matches.ts`     |
+| Shocks       | 5       | `data/shocks.ts`      |
+| Parties      | 7       | `data/parties.ts`     |
+
+All records are curated demo data. See the section below for how to replace
+them with real ingested sources.
 
 ---
 
